@@ -3,8 +3,8 @@
 
   <!-- Elixir Main Org -->
   <remote name="elixir"
-          fetch="https://github.com/Geeky-Works-Here"
-          revision="refs/heads/vany" />
+          fetch="https://github.com/Elixir-Is-gay"
+          revision="refs/heads/fifteen" />
 
   <!-- Elixir Gitlab -->
   <remote name="elixir-gitlab"
@@ -17,15 +17,15 @@
           revision="A15" />
 
   <!-- Art -->
-  <project path="art" name="android_art" groups="pdk" remote="elixir" revision="vany" clone-depth="1" />
+  <project path="art" name="art" groups="pdk" remote="elixir" revision="fifteen" clone-depth="1" />
   
   <!-- Rootdir -->
 
   <!-- Bootable -->
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" revision="vany" remote="elixir" clone-depth="1" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" revision="fifteen" remote="elixir" clone-depth="1" />
   
   <!-- Build -->
-  <project path="build/make" name="android_build" revision="vany" remote="elixir" groups="pdk,sysui-studio" >
+  <project path="build/make" name="build" revision="fifteen" remote="elixir" groups="pdk,sysui-studio" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -34,50 +34,50 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   
-  <project path="build/soong" name="build_soong" revision="vany" remote="elixir" groups="pdk,tradefed" >
+  <project path="build/soong" name="build_soong" revision="fifteen" remote="elixir" groups="pdk,tradefed" >
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
   <!-- External -->
-  <project path="external/piex" name="external_piex" groups="pdk" revision="vany" remote="elixir" clone-depth="1" />
+  <project path="external/piex" name="external_piex" groups="pdk" revision="fifteen" remote="elixir" clone-depth="1" />
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" revision="vany" remote="elixir" clone-depth="1" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
-  <project path="frameworks/av" name="android_frameworks_av" revision="vany" remote="elixir" clone-depth="1" />
-  <project path="frameworks/native" name="android_frameworks_native" revision="vany" remote="elixir" clone-depth="1" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" revision="vany" remote="elixir" />
+  <project path="frameworks/base" name="frameworks_base" revision="15" remote="elixir" clone-depth="1" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
+  <project path="frameworks/av" name="frameworks_av" revision="fifteen" remote="elixir" clone-depth="1" />
+  <project path="frameworks/native" name="frameworks_native" revision="fifteen" remote="elixir" clone-depth="1" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" revision="fifteen" remote="elixir" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="elixir" />
   
   <!-- Hardware -->
   
   <!-- Packages -->
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="elixir" revision="vany" clone-depth="1" groups="pdk-fs,pdk-cw-tvc"/>
-  <project path="packages/apps/Essence" name="packages_apps_Essence" remote="elixir" revision="vany" clone-depth="1" />
-  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="elixir" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="elixir" revision="fifteen" clone-depth="1" groups="pdk-fs,pdk-cw-tvc"/>
+  <project path="packages/apps/Essence" name="packages_apps_Essence" remote="elixir" revision="fifteen" clone-depth="1" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="elixir" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="elixir"  clone-depth="1" />
   <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="elixir" />
   
   <!-- Packages (Services) repos -->
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="elixir" clone-depth="1" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="elixir" clone-depth="1" />
   
   <!-- Packages (Modules) repos -->
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="elixir" />
   
   <!-- SDK -->
-  <project path="lineage-sdk" name="android_lineage-sdk" revision="vany" remote="elixir" />
+  <project path="lineage-sdk" name="lineage-sdk" revision="fifteen" remote="elixir" />
   
   <!-- System repos -->
-  <project path="system/core" name="android_system_core" groups="pdk" revision="vany" remote="elixir" clone-depth="1" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="elixir" revision="vany" clone-depth="1" />
-  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" revision="vany" remote="elixir" clone-depth="1" />
-  <project path="system/update_engine" name="system_update_engine" groups="pdk" revision="vany" remote="elixir" />
+  <project path="system/core" name="system_core" groups="pdk" revision="fifteen" remote="elixir" clone-depth="1" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="elixir" revision="fifteen" clone-depth="1" />
+  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" revision="fifteen" remote="elixir" clone-depth="1" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" revision="fifteen" remote="elixir" />
   
   <!-- QCOM Sepolicies -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="elixir" clone-depth="1" />
   
   <!-- Vendor repos -->
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="elixir"  clone-depth="1" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="elixir"  clone-depth="1" />
   <project path="vendor/overlays" name="vendor_overlays" remote="elixir"  clone-depth="1" />
   <project path="vendor/gms" name="vendor-gms-vany" groups="vendor" revision="fifteen" remote="elixir-gitlab" clone-depth="1" />
   
