@@ -16,6 +16,11 @@
           fetch="https://github.com/ProjectElixir-Devices"
           revision="A15" />
 
+  <!-- LineageOS -->
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-22.1" />
+  
   <!-- Art -->
   <project path="art" name="art" groups="pdk" remote="elixir" revision="fifteen" clone-depth="1" />
   
@@ -46,7 +51,7 @@
   <project path="frameworks/base" name="frameworks_base" revision="15" remote="elixir" clone-depth="1" groups="pdk-cw-fs,pdk-fs,sysui-studio"/>
   <project path="frameworks/av" name="frameworks_av" revision="fifteen" remote="elixir" clone-depth="1" />
   <project path="frameworks/native" name="frameworks_native" revision="fifteen" remote="elixir" clone-depth="1" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" revision="fifteen" remote="elixir" />
+  #<project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" revision="lineage-22.1" remote="lineage" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="elixir" />
   
   <!-- Hardware -->
@@ -59,22 +64,22 @@
   <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="elixir" />
   
   <!-- Packages (Services) repos -->
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="elixir" clone-depth="1" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="lineage" clone-depth="1" />
   
   <!-- Packages (Modules) repos -->
-  <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="elixir" />
+  <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" remote="lineage" />
   
   <!-- SDK -->
-  <project path="lineage-sdk" name="lineage-sdk" revision="fifteen" remote="elixir" />
+  <project path="lineage-sdk" name="android_lineage-sdk" revision="lineage-22.1" remote="lineage" />
   
   <!-- System repos -->
   <project path="system/core" name="system_core" groups="pdk" revision="fifteen" remote="elixir" clone-depth="1" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="elixir" revision="fifteen" clone-depth="1" />
-  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" revision="fifteen" remote="elixir" clone-depth="1" />
-  <project path="system/update_engine" name="system_update_engine" groups="pdk" revision="fifteen" remote="elixir" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" groups="pdk" revision="lineage-19.1" remote="lineage" clone-depth="1" />
+  <project path="system/update_engine" name="android_system_update_engine" groups="pdk" revision="lineage-22.1" remote="lineage" />
   
   <!-- QCOM Sepolicies -->
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="elixir" clone-depth="1" />
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="lineage" clone-depth="1" />
   
   <!-- Vendor repos -->
   <project path="vendor/lineage" name="vendor_lineage" remote="elixir"  clone-depth="1" />
