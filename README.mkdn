@@ -30,7 +30,7 @@ cd WORKSPACE
 
 ### Install Repo in the created directory
 ```bash
-repo init --depth=1 -u https://github.com/Geeky-Works-Here/official_manifest -b vany --git-lfs
+repo init --depth=1 -u https://github.com/Elixir-Is-garbage/manifest -b 15 --git-lfs
 ```
 
 ### Download the source
